@@ -1,0 +1,167 @@
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+.hidden {
+    opacity: 0;
+    z-index: -1;
+    display: none;
+}
+
+div.dateSelectBox {
+    position: absolute;
+    width: 280px;
+    height: 300px;
+    top: 50px;
+    left: 200px;
+    display: inline-block;
+    border: 1px solid rgb(200, 100, 45);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(200, 150, 1750, 0.5);
+    -webkit-box-shadow: 0px 0px 5px rgba(200, 150, 1750, 0.5);
+}
+
+table.dateSelect {
+    width: 100%;
+    height: 100%;
+}
+
+div.hideTable {
+    position: absolute;
+    display: none;
+}
+
+tr>td {
+    text-align: center;
+    vertical-align: middle;
+    width: 40px;
+}
+
+table.dateSelect tr.select-head {
+    height: 30px;
+}
+
+tr.select-head td div,
+tr.select-head td i {
+    display: inline-block;
+}
+
+tr.select-head td div.select-div {
+    width: 50px;
+    font-size: 18px;
+    line-height: -2px;
+    margin: 0px 10px;
+    border: 1px outset rgba(0, 0, 0, 0);
+}
+
+tr.select-head td div.select-div:hover {
+    border: 1px outset rgba(50, 50, 50, 0.1);
+    box-shadow: 0px 0px 5px rgba(200, 150, 1750, 0.5);
+    -webkit-box-shadow: 0px 0px 5px rgba(200, 150, 1750, 0.5);
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+tr.select-head td input.date-input{
+    width:50px;
+    margin:0px 11px;
+    position: relative;
+    top:-1px;
+    font-size:16px;
+    text-align:center;
+}
+
+tr.select-head td i {
+    font-family: 'FontAwesome';
+    color: rgb(100, 100, 100);
+    font-style: normal;
+    font-size: 22px;
+    width: 15px;
+    cursor: pointer;
+}
+
+tr.select-head td i.reduceMonth {
+    margin-left: 20px;
+}
+
+tr.select-head td i.reduceYear:before,
+tr.select-head td i.reduceMonth:before {
+    content: "\f104";
+}
+
+tr.select-head td i.addYear:before,
+tr.select-head td i.addMonth:before {
+    content: "\f105";
+}
+
+tr.select-row:not(.select-row-head) td.select-able div {
+    cursor: pointer;
+}
+
+tr.select-row:not(.select-row-head) td.select-able:not(.selected) div:hover {
+    background-color: rgb(230, 230, 230);
+    color: #fff;
+    border-radius: 150%;
+    -webkit-border-radius: 150%;
+    box-shadow: 0px 0px 5px rgba(200, 150, 1750, 0.5);
+    -webkit-box-shadow: 0px 0px 5px rgba(200, 150, 1750, 0.5);
+}
+
+tr.select-row td.disabled div {
+    color: grey;
+}
+
+tr.select-row td div {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 6px;
+    width: 20px;
+    margin: 0px;
+}
+
+tr.select-row td.selected div {
+    color: #fff;
+    font-weight: bold;
+    background-color: rgb(100, 179, 150);
+    border-radius: 150%;
+    -webkit-border-radius: 150%;
+    box-shadow: 0px 0px 8px rgba(200, 150, 1750, 0.5);
+    -webkit-box-shadow: 0px 0px 8px rgba(200, 150, 1750, 0.5);
+}
+
+div.dateSelectBox tr td button{
+    outline: none;
+    border:1px solid #cccccc;
+    background-color: #fff;
+    padding:5px 20px;
+} 
+
+div.dateSelectBox tr td button:active{
+    box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.1) inset;
+}
+
+div.dateSelectBox div.year-input-box {
+    position: absolute;
+    z-index: 99;
+    width: 135px;
+}
+
+div.dateSelectBox div.year-input-box input {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    font-size: 18px;
+}
+
+div.dateSelectBox div.year-input-box button {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
